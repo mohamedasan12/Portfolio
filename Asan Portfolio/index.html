@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documnet Title</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4a7fabfd16.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+           <div class="container">
+            <nav>
+                <!-- <img src="images/fc barca.jpg" class="logo"> -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>FULL-STACK DEVELOPER</p>
+                <h1>Hi. I'm <span>Asan</span>,<br> Full-stack developer</h1>
+            </div>
+           </div> 
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-first-col">
+                        <img src="images/Passport.jpg">
+                    </div>
+                    <div class="about-second-col">
+                        <h1 class="title-text">About Me</h1>
+                        <p>As a dedicated Full Stack Developer with over 2 years of experience.<br>
+                             I bring a relentless pursuit of excellence to every project I undertake.<br> 
+                             With a solid foundation in both front-end and back-end development,<br> 
+                             coupled with a commitment to strong work ethics,<br> 
+                             I continuously strive to deliver exceptional results that exceed expectations
+                        </p>
+                        
+                        <div class="field-titles">
+                            <div class="field-link active-field-link" onclick="openfield('experience')">Experience</div>
+                            <div class="field-link " onclick="openfield('skills')">Skills</div>
+                            <div class="field-link " onclick="openfield('education')">Education</div>
+                        </div>
+                        <div class="field-contents active-field" id="experience">
+                            <ul>
+                                <li><span>Full-stack Developer</span><br>Worked as a Full-stack developer in FAW Technologies for 2 years</li>
+                            </ul>
+                        </div>
+                        <div class="field-contents " id="skills">
+                            <ul>
+                                <li><span>JAVA</span><br>Experienced in JAVA, JAVA 8 and Core JAVA </li>
+                                <li><span>Spring-boot</span><br>Used Spring-boot to develop APIs</li>
+                                <li><span>SQL</span><br>Created procedures, triggers, indexes using SQL</li>
+                                <li><span>Angular</span><br>Developed SPAs for many modules</li>
+                                <li><span>HTML & CSS</span><br>Designed the structure of SPAs using both HTML and CSS </li>
+                            </ul>
+                        </div>
+                        <div class="field-contents " id="education">
+                            <ul>
+                                <li><span>2022</span><br>JAVA course at Qspiders</li>
+                                <li><span>2016-2019</span><br>B.com at PSG College of Arts and Sciences</li>
+                                <li><span>2016</span><br>HSC at MKVK Mat. Hr. Sec. School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="container">
+                <h1 class="title-text">Projects</h1>
+                <div class="project-list">
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Front-end developer</h2>
+                        <p>Having hands-on experience in technologies like Angular, HTML and CSS</p>
+                        <!-- <a href="#">Learn more</a> -->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-computer"></i>
+                        <h2>Backend developer</h2>
+                        <p>Having hands-on experience in technologies like JAVA, Spring-boot, SQL,  Hibernate, AWS</p>
+                        <!-- <a href="#">Learn more</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="title-text">My Works</h1>
+                <div class="works">
+                    <div class="work">
+                        <img src="images/BNP Paribas.jpg">
+                        <div class="layer">
+                            <h3>Banking Application</h3>
+                            <p>BNP Paribas is a banking applications which provides various transaction methods for it's users.</p>
+                            <a href="https://www.bnpparibas.com" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/Gloplax.jpeg">
+                        <div class="layer">
+                            <h3>Offshoring Ecosystem</h3>
+                            <p>GLOPLAX is an offshoring Ecosystem providing it's client various strategies for setting up companies offshore.</p>
+                            <a href="https://guide.gloplax.com/#/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="#" class="btn">Read more</a> -->
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-first-col">
+                        <h1 class="title-text">Contact Me</h1>
+                        <p><i class="fa-solid fa-message"></i>mohamedasan1122@gmail.com</p>
+                        <p><i class="fa-solid fa-mobile"></i>+91 9655600550</p>
+                        <div class="linkedin-icon">
+                            <a href="https://www.linkedin.com/in/mohamed-asan-p" target="_blank"><i class="fa-brands fa-linkedin"></i>
+                            https://www.linkedin.com/in/mohamed-asan-p</a>
+                        </div>
+                        <a href="images/Mohamed Asan P.pdf" download class="btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-second-col">
+                        <h1 class="title-text">Leave a message</h1>
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Enter your name" required pattern="[A-Za-z ]+" title="Please enter only alphabets">
+                            <input type="text" name="Email" placeholder="Enter your mail ID" required>
+                            <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+                            <button class="btn2">SUBMIT</button>
+                        </form>
+                        <span id="success-message"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var fieldlinks = document.getElementsByClassName("field-link");
+            var fieldcontents = document.getElementsByClassName("field-contents");
+
+            function openfield(fieldname){
+                for(fieldlink of fieldlinks){
+                    fieldlink.classList.remove("active-field-link")
+                }
+                for(fieldcontent of fieldcontents){
+                    fieldcontent.classList.remove("active-field")
+                }
+                event.currentTarget.classList.add("active-field-link")
+                document.getElementById(fieldname).classList.add("active-field")
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwyQ6Y6nwox3A_noZkCSoKAAn0bShC1e-hhJ4pvPqHWX49z4Q-Uh9yoMajMW7k8bKHQMA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const respMsg = document.getElementById("success-message")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    respMsg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        respMsg.innerHTML=""
+                    },4000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+
+          </script>
+    </body>
+</html>
