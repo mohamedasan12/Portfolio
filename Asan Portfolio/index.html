@@ -7,6 +7,12 @@
         <title>Documnet Title</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/4a7fabfd16.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            (function () {
+                emailjs.init("8rjH-L4tZ5Jhd5m-K");
+            })();
+        </script>
     </head>
     <body>
         <div id="header">
@@ -133,13 +139,30 @@
                     </div>
                     <div class="contact-second-col">
                         <h1 class="title-text">Leave a message</h1>
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Enter your name" required pattern="[A-Za-z ]+" title="Please enter only alphabets">
-                            <input type="text" name="Email" placeholder="Enter your mail ID" required>
-                            <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
-                            <button class="btn2">SUBMIT</button>
+                        <form id="contact-form">
+                            <input type="text" name="from_name" placeholder="Enter your name" required pattern="[A-Za-z ]+"
+                                title="Please enter only alphabets">
+                            <input type="email" name="reply_to" placeholder="Enter your mail ID" required>
+                            <textarea name="message" rows="6" placeholder="Enter your Message"></textarea>
+                            <button class="btn2" type="submit">SUBMIT</button>
                         </form>
                         <span id="success-message"></span>
+                        
+                        <script>
+                            document.getElementById('contact-form').addEventListener('submit', function (e) {
+                                e.preventDefault();
+                                emailjs.sendForm('service_93mnwnp', 'template_dtj9p08', this)
+                                    .then(function () {
+                                        document.getElementById('success-message').innerHTML = "Message sent successfully!";
+                                        setTimeout(function () {
+                                            document.getElementById('success-message').innerHTML = "";
+                                        }, 4000);
+                                        document.getElementById('contact-form').reset();
+                                    }, function (error) {
+                                        document.getElementById('success-message').innerHTML = "Failed to send message.";
+                                    });
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
